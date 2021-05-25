@@ -26,7 +26,7 @@ export default function Post(props) {
           <p>Date: {post.createdDate.substring(0, 10)} </p>
           <p>Time: {post.createdDate.substring(11, 19)}</p>
           <span>{post.commentCount} </span>
-          <span>{post.commentCount > 0 ? "Comments" : "Comment"}</span>
+          <span>{post.commentCount > 1 ? "Comments" : "Comment"}</span>
           </div>
       </div>
     </div>
