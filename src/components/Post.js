@@ -25,8 +25,8 @@ export default function Post(props) {
           <div className="card-comment">
           <p>Date: {post.createdDate.substring(0, 10)} </p>
           <p>Time: {post.createdDate.substring(11, 19)}</p>
-          <span>{post.voteCount} </span>
-          <span>{post.commentCount} Comments</span>
+          <span>{post.commentCount} </span>
+          <span>{post.commentCount > 0 ? "Comments" : "Comment"}</span>
           </div>
       </div>
     </div>
